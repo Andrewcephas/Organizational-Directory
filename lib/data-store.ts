@@ -1,0 +1,1462 @@
+import type { Entity, LeadershipTeam } from "./types"
+
+// Leadership data
+export const leadershipData: LeadershipTeam[] = [
+  {
+    id: "patron",
+    title: "Patron",
+    description:
+      "The Patron provides spiritual guidance and oversight to the entire Christian Union, ensuring alignment with Christian values and university policies.",
+    members: [
+      {
+        id: "patron-1",
+        name: "Rev. Dr. Samuel Kiprotich",
+        position: "Patron",
+        email: "patron@ksucu.org",
+        phone: "+254 700 123 456",
+        image: "/images/patron.jpg",
+        bio: "Rev. Dr. Samuel Kiprotich has been serving as the Patron of KSUCU-MC for over 10 years, providing spiritual guidance and leadership to thousands of students.",
+      },
+    ],
+  },
+  {
+    id: "executive",
+    title: "Assistant Executive (Chairperson)",
+    description:
+      "The Assistant Executive serves as the Chairperson, leading the day-to-day operations of the Christian Union and coordinating all ministry activities.",
+    members: [
+      {
+        id: "chair-1",
+        name: "Grace Wanjiku Muthoni",
+        position: "Chairperson",
+        email: "chairperson@ksucu.org",
+        phone: "+254 700 234 567",
+        image: "/images/chairperson.jpg",
+        bio: "Grace is a final year student pursuing Bachelor of Theology, passionate about student ministry and leadership development.",
+      },
+      {
+        id: "vice-chair-1",
+        name: "David Ochieng Otieno",
+        position: "Vice Chairperson",
+        email: "vicechairperson@ksucu.org",
+        phone: "+254 700 345 678",
+        image: "/images/vice-chairperson.jpg",
+        bio: "David supports the Chairperson in all activities and specializes in evangelism and outreach programs.",
+      },
+      {
+        id: "secretary-1",
+        name: "Mary Chepkemoi Rotich",
+        position: "Secretary",
+        email: "secretary@ksucu.org",
+        phone: "+254 700 456 789",
+        image: "/images/secretary.jpg",
+        bio: "Mary handles all documentation, meeting minutes, and communication within the executive team.",
+      },
+      {
+        id: "treasurer-1",
+        name: "Peter Mwangi Kamau",
+        position: "Treasurer",
+        email: "treasurer@ksucu.org",
+        phone: "+254 700 567 890",
+        image: "/images/treasurer.jpg",
+        bio: "Peter manages all financial matters, budgeting, and financial accountability for the Christian Union.",
+      },
+    ],
+  },
+]
+
+// Complete entities data with all specified organizations
+export let entitiesData: Entity[] = [
+  // KSUCU-MC BOARDS
+  {
+    id: "ict-board",
+    name: "ICT Board",
+    category: "KSUCU-MC BOARDS",
+    mandate:
+      "The ICT Board is responsible for managing and maintaining all technological infrastructure within KSUCU-MC. We ensure seamless digital communication, maintain websites, manage databases, and provide technical support for all church activities.",
+    vision: "To leverage technology for effective ministry and church growth in the digital age.",
+    objectives: [
+      "Maintain and upgrade church technological infrastructure",
+      "Provide technical support for all church events and services",
+      "Develop and maintain digital platforms for church communication",
+      "Train church members on digital literacy and tools",
+      "Ensure data security and backup systems",
+    ],
+    leaders: [
+      {
+        id: "ict-leader-1",
+        name: "John Kamau Mwangi",
+        position: "ICT Board Chairperson",
+        email: "john.kamau@ksucu.org",
+        phone: "+254 700 111 222",
+        image: "/images/john-kamau.jpg",
+        bio: "John is a Computer Science student with expertise in web development and database management.",
+      },
+      {
+        id: "ict-leader-2",
+        name: "Sarah Wanjiku Njeri",
+        position: "Vice Chairperson",
+        email: "sarah.wanjiku@ksucu.org",
+        phone: "+254 700 222 333",
+        image: "/images/sarah-wanjiku.jpg",
+        bio: "Sarah specializes in network administration and cybersecurity.",
+      },
+    ],
+    members: [
+      {
+        id: "ict-member-1",
+        name: "Michael Otieno",
+        position: "Systems Administrator",
+        image: "/images/michael-otieno.jpg",
+      },
+      {
+        id: "ict-member-2",
+        name: "Grace Akinyi",
+        position: "Web Developer",
+        image: "/images/grace-akinyi.jpg",
+      },
+      {
+        id: "ict-member-3",
+        name: "Samuel Kiprotich",
+        position: "Database Manager",
+        image: "/images/samuel-kiprotich.jpg",
+      },
+      {
+        id: "ict-member-4",
+        name: "Faith Nyambura",
+        position: "Technical Support",
+        image: "/images/faith-nyambura.jpg",
+      },
+    ],
+    meetingTime: "Every Tuesday 6:00 PM",
+    location: "ICT Lab, Main Campus",
+  },
+  {
+    id: "editorial-board",
+    name: "Editorial Board",
+    category: "KSUCU-MC BOARDS",
+    mandate:
+      "The Editorial Board oversees all written content and publications within KSUCU-MC. We ensure quality, accuracy, and spiritual alignment of all church communications, newsletters, bulletins, and digital content.",
+    vision: "To communicate God's word effectively through quality written content and publications.",
+    objectives: [
+      "Review and approve all church publications",
+      "Maintain editorial standards and guidelines",
+      "Coordinate content creation across different ministries",
+      "Manage church newsletter and bulletin production",
+      "Ensure theological accuracy in all publications",
+    ],
+    leaders: [
+      {
+        id: "editorial-leader-1",
+        name: "Rev. Sarah Mutua",
+        position: "Editorial Board Chairperson",
+        email: "sarah.mutua@ksucu.org",
+        phone: "+254 700 333 444",
+        image: "/images/sarah-mutua.jpg",
+        bio: "Rev. Sarah has extensive experience in Christian publishing and theological writing.",
+      },
+      {
+        id: "editorial-leader-2",
+        name: "James Kiplagat",
+        position: "Chief Editor",
+        email: "james.kiplagat@ksucu.org",
+        phone: "+254 700 444 555",
+        image: "/images/james-kiplagat.jpg",
+        bio: "James is a journalism graduate with a passion for Christian communication.",
+      },
+    ],
+    members: [
+      {
+        id: "editorial-member-1",
+        name: "Ruth Wambui",
+        position: "Content Coordinator",
+        image: "/images/ruth-wambui.jpg",
+      },
+      {
+        id: "editorial-member-2",
+        name: "Daniel Kuria",
+        position: "Layout Designer",
+        image: "/images/daniel-kuria.jpg",
+      },
+      {
+        id: "editorial-member-3",
+        name: "Joyce Auma",
+        position: "Content Reviewer",
+        image: "/images/joyce-auma.jpg",
+      },
+    ],
+    meetingTime: "Every Friday 4:00 PM",
+    location: "Conference Room A",
+  },
+  {
+    id: "media-production",
+    name: "Media Production",
+    category: "KSUCU-MC BOARDS",
+    mandate:
+      "Media Production handles all audio-visual content creation, live streaming, recording, and multimedia presentations for KSUCU-MC services and events.",
+    vision: "To enhance worship experience and extend church reach through quality media production.",
+    objectives: [
+      "Produce high-quality audio-visual content for services",
+      "Manage live streaming and recording of church events",
+      "Create promotional and educational videos",
+      "Maintain and operate media equipment",
+      "Train volunteers in media production skills",
+    ],
+    leaders: [
+      {
+        id: "media-leader-1",
+        name: "Kevin Mbugua",
+        position: "Media Production Head",
+        email: "kevin.mbugua@ksucu.org",
+        phone: "+254 700 555 666",
+        image: "/images/kevin-mbugua.jpg",
+        bio: "Kevin is a multimedia specialist with experience in broadcast media.",
+      },
+      {
+        id: "media-leader-2",
+        name: "Linda Cherop",
+        position: "Video Production Lead",
+        email: "linda.cherop@ksucu.org",
+        phone: "+254 700 666 777",
+        image: "/images/linda-cherop.jpg",
+        bio: "Linda specializes in video editing and post-production work.",
+      },
+    ],
+    members: [
+      {
+        id: "media-member-1",
+        name: "Brian Omondi",
+        position: "Audio Engineer",
+        image: "/images/brian-omondi.jpg",
+      },
+      {
+        id: "media-member-2",
+        name: "Collins Wekesa",
+        position: "Camera Operator",
+        image: "/images/collins-wekesa.jpg",
+      },
+      {
+        id: "media-member-3",
+        name: "Mercy Wanjiru",
+        position: "Video Editor",
+        image: "/images/mercy-wanjiru.jpg",
+      },
+      {
+        id: "media-member-4",
+        name: "Hannah Muthoni",
+        position: "Graphics Designer",
+        image: "/images/hannah-muthoni.jpg",
+      },
+    ],
+    meetingTime: "Every Sunday 2:00 PM",
+    location: "Media Studio",
+  },
+  {
+    id: "communication-board",
+    name: "Communication Board",
+    category: "KSUCU-MC BOARDS",
+    mandate:
+      "The Communication Board manages all internal and external communications, public relations, and information dissemination within KSUCU-MC and to the broader community.",
+    vision: "To facilitate effective communication that builds unity and promotes church growth.",
+    objectives: [
+      "Develop and implement communication strategies",
+      "Manage church social media presence",
+      "Coordinate public relations activities",
+      "Ensure timely information dissemination",
+      "Handle crisis communication when necessary",
+    ],
+    leaders: [
+      {
+        id: "comm-leader-1",
+        name: "Patricia Wangari",
+        position: "Communications Director",
+        email: "patricia.wangari@ksucu.org",
+        phone: "+254 700 777 888",
+        image: "/images/patricia-wangari.jpg",
+        bio: "Patricia has a background in public relations and corporate communications.",
+      },
+      {
+        id: "comm-leader-2",
+        name: "Robert Macharia",
+        position: "Public Relations Officer",
+        email: "robert.macharia@ksucu.org",
+        phone: "+254 700 888 999",
+        image: "/images/robert-macharia.jpg",
+        bio: "Robert manages external communications and media relations.",
+      },
+    ],
+    members: [
+      {
+        id: "comm-member-1",
+        name: "Agnes Moraa",
+        position: "Social Media Manager",
+        image: "/images/agnes-moraa.jpg",
+      },
+      {
+        id: "comm-member-2",
+        name: "Timothy Njoroge",
+        position: "Communications Assistant",
+        image: "/images/timothy-njoroge.jpg",
+      },
+      {
+        id: "comm-member-3",
+        name: "Lydia Chepkemoi",
+        position: "Content Creator",
+        image: "/images/lydia-chepkemoi.jpg",
+      },
+    ],
+    meetingTime: "Every Wednesday 5:00 PM",
+    location: "Communications Office",
+  },
+
+  // EVANGELISTIC TEAMS
+  {
+    id: "cet",
+    name: "CET",
+    category: "EVANGELISTIC TEAMS",
+    mandate:
+      "CET (Christian Evangelistic Team) focuses on campus evangelism and discipleship among university students, spreading the Gospel within academic institutions.",
+    vision: "To transform university campuses through the power of the Gospel and discipleship.",
+    objectives: [
+      "Conduct evangelistic campaigns in universities",
+      "Establish and strengthen campus fellowships",
+      "Disciple new converts and young believers",
+      "Organize inter-campus Christian events",
+      "Mentor student leaders in evangelism",
+    ],
+    leaders: [
+      {
+        id: "cet-leader-1",
+        name: "Pastor Mark Kiprotich",
+        position: "Team Leader",
+        email: "mark.kiprotich@ksucu.org",
+        phone: "+254 700 100 200",
+        image: "/images/mark-kiprotich.jpg",
+        bio: "Pastor Mark has been involved in campus ministry for over 8 years.",
+      },
+      {
+        id: "cet-leader-2",
+        name: "Catherine Wanjala",
+        position: "Campus Coordinator",
+        email: "catherine.wanjala@ksucu.org",
+        phone: "+254 700 200 300",
+        image: "/images/catherine-wanjala.jpg",
+        bio: "Catherine coordinates evangelistic activities across different campuses.",
+      },
+    ],
+    members: [
+      {
+        id: "cet-member-1",
+        name: "Emmanuel Kigen",
+        position: "Evangelist",
+        image: "/images/emmanuel-kigen.jpg",
+      },
+      {
+        id: "cet-member-2",
+        name: "Beatrice Nyokabi",
+        position: "Worship Leader",
+        image: "/images/beatrice-nyokabi.jpg",
+      },
+      {
+        id: "cet-member-3",
+        name: "Joseph Mwangi",
+        position: "Bible Study Leader",
+        image: "/images/joseph-mwangi.jpg",
+      },
+    ],
+    meetingTime: "Every Thursday 6:30 PM",
+    location: "Student Center",
+  },
+  {
+    id: "net",
+    name: "NET",
+    category: "EVANGELISTIC TEAMS",
+    mandate:
+      "NET (New Evangelistic Team) specializes in reaching out to new students and first-time visitors, providing them with a warm welcome and introduction to the Christian faith.",
+    vision: "To ensure no new student leaves campus without hearing the Gospel message.",
+    objectives: [
+      "Welcome and orient new students",
+      "Conduct orientation evangelistic programs",
+      "Follow up on new converts and visitors",
+      "Organize welcome events for freshmen",
+      "Create integration programs for new members",
+    ],
+    leaders: [
+      {
+        id: "net-leader-1",
+        name: "Pastor Jane Wanjiru",
+        position: "Team Leader",
+        email: "jane.wanjiru@ksucu.org",
+        phone: "+254 700 300 400",
+        image: "/images/jane-wanjiru.jpg",
+        bio: "Pastor Jane specializes in new member integration and discipleship.",
+      },
+      {
+        id: "net-leader-2",
+        name: "Stephen Mutiso",
+        position: "Orientation Coordinator",
+        email: "stephen.mutiso@ksucu.org",
+        phone: "+254 700 400 500",
+        image: "/images/stephen-mutiso.jpg",
+        bio: "Stephen manages all new student orientation programs.",
+      },
+    ],
+    members: [
+      {
+        id: "net-member-1",
+        name: "Winnie Achieng",
+        position: "Welcome Coordinator",
+        image: "/images/winnie-achieng.jpg",
+      },
+      {
+        id: "net-member-2",
+        name: "Samuel Rotich",
+        position: "Follow-up Leader",
+        image: "/images/samuel-rotich.jpg",
+      },
+      {
+        id: "net-member-3",
+        name: "Ruth Chepkemoi",
+        position: "Integration Specialist",
+        image: "/images/ruth-chepkemoi.jpg",
+      },
+    ],
+    meetingTime: "Every Saturday 10:00 AM",
+    location: "Welcome Center",
+  },
+  {
+    id: "eset",
+    name: "ESET",
+    category: "EVANGELISTIC TEAMS",
+    mandate:
+      "ESET (Evangelistic Support and Encouragement Team) provides support and encouragement to evangelistic efforts while focusing on community outreach and soul winning.",
+    vision: "To support and strengthen evangelistic work through prayer, encouragement, and practical assistance.",
+    objectives: [
+      "Support evangelistic campaigns and crusades",
+      "Provide prayer backing for evangelistic activities",
+      "Encourage and train evangelists",
+      "Organize community outreach programs",
+      "Follow up on new converts",
+    ],
+    leaders: [
+      {
+        id: "eset-leader-1",
+        name: "Evangelist Paul Kimani",
+        position: "Team Leader",
+        email: "paul.kimani@ksucu.org",
+        phone: "+254 700 500 600",
+        image: "/images/paul-kimani.jpg",
+        bio: "Evangelist Paul has led numerous successful evangelistic campaigns.",
+      },
+      {
+        id: "eset-leader-2",
+        name: "Rose Cheptoo",
+        position: "Prayer Coordinator",
+        email: "rose.cheptoo@ksucu.org",
+        phone: "+254 700 600 700",
+        image: "/images/rose-cheptoo.jpg",
+        bio: "Rose coordinates prayer support for all evangelistic activities.",
+      },
+    ],
+    members: [
+      {
+        id: "eset-member-1",
+        name: "Francis Ouma",
+        position: "Outreach Director",
+        image: "/images/francis-ouma.jpg",
+      },
+      {
+        id: "eset-member-2",
+        name: "Margaret Wairimu",
+        position: "Prayer Warrior",
+        image: "/images/margaret-wairimu.jpg",
+      },
+      {
+        id: "eset-member-3",
+        name: "Isaac Rotich",
+        position: "Evangelist",
+        image: "/images/isaac-rotich.jpg",
+      },
+    ],
+    meetingTime: "Every Saturday 3:00 PM",
+    location: "Prayer Hall",
+  },
+  {
+    id: "rivet",
+    name: "RIVET",
+    category: "EVANGELISTIC TEAMS",
+    mandate:
+      "RIVET (Revival and Evangelistic Team) focuses on organizing revival meetings, evangelistic crusades, and spiritual awakening events within and outside the church community.",
+    vision: "To ignite spiritual revival and bring souls to Christ through powerful evangelistic events.",
+    objectives: [
+      "Organize revival meetings and crusades",
+      "Coordinate evangelistic outreaches",
+      "Train and equip evangelists",
+      "Mobilize prayer for revival",
+      "Document and follow up on conversions",
+    ],
+    leaders: [
+      {
+        id: "rivet-leader-1",
+        name: "Rev. Joshua Mwangi",
+        position: "Revival Coordinator",
+        email: "joshua.mwangi@ksucu.org",
+        phone: "+254 700 700 800",
+        image: "/images/joshua-mwangi.jpg",
+        bio: "Rev. Joshua has organized over 50 successful revival meetings.",
+      },
+      {
+        id: "rivet-leader-2",
+        name: "Miriam Chepkurui",
+        position: "Evangelism Leader",
+        email: "miriam.chepkurui@ksucu.org",
+        phone: "+254 700 800 900",
+        image: "/images/miriam-chepkurui.jpg",
+        bio: "Miriam leads evangelistic training and equipping programs.",
+      },
+    ],
+    members: [
+      {
+        id: "rivet-member-1",
+        name: "Peter Wanjiku",
+        position: "Event Organizer",
+        image: "/images/peter-wanjiku.jpg",
+      },
+      {
+        id: "rivet-member-2",
+        name: "Mary Wambui",
+        position: "Worship Coordinator",
+        image: "/images/mary-wambui.jpg",
+      },
+      {
+        id: "rivet-member-3",
+        name: "John Ochieng",
+        position: "Logistics Manager",
+        image: "/images/john-ochieng.jpg",
+      },
+    ],
+    meetingTime: "Every Sunday 4:00 PM",
+    location: "Main Sanctuary",
+  },
+  {
+    id: "weso",
+    name: "WESO",
+    category: "EVANGELISTIC TEAMS",
+    mandate:
+      "WESO (Witnessing and Evangelistic Service Organization) is dedicated to systematic evangelism, church planting, and discipleship across different communities.",
+    vision: "To establish strong Christian communities through systematic evangelism and church planting.",
+    objectives: [
+      "Plant new churches in unreached areas",
+      "Train local evangelists and pastors",
+      "Conduct systematic evangelism programs",
+      "Establish discipleship programs",
+      "Support rural and urban missions",
+    ],
+    leaders: [
+      {
+        id: "weso-leader-1",
+        name: "Bishop David Kiptoo",
+        position: "National Coordinator",
+        email: "david.kiptoo@ksucu.org",
+        phone: "+254 700 900 100",
+        image: "/images/david-kiptoo.jpg",
+        bio: "Bishop David has planted over 20 churches across Kenya.",
+      },
+      {
+        id: "weso-leader-2",
+        name: "Evangelist Simon Mutua",
+        position: "Field Coordinator",
+        email: "simon.mutua@ksucu.org",
+        phone: "+254 700 100 200",
+        image: "/images/simon-mutua.jpg",
+        bio: "Evangelist Simon coordinates field evangelistic activities.",
+      },
+    ],
+    members: [
+      {
+        id: "weso-member-1",
+        name: "Philip Cheruiyot",
+        position: "Church Planter",
+        image: "/images/philip-cheruiyot.jpg",
+      },
+      {
+        id: "weso-member-2",
+        name: "Esther Nyambura",
+        position: "Discipleship Trainer",
+        image: "/images/esther-nyambura.jpg",
+      },
+      {
+        id: "weso-member-3",
+        name: "Daniel Kiplagat",
+        position: "Mission Coordinator",
+        image: "/images/daniel-kiplagat.jpg",
+      },
+    ],
+    meetingTime: "First Saturday of every month 9:00 AM",
+    location: "Mission Center",
+  },
+
+  // KSUCU-MC MINISTRIES
+  {
+    id: "ushering",
+    name: "Ushering",
+    category: "KSUCU-MC MINISTRIES",
+    mandate:
+      "The Ushering Ministry ensures orderly and welcoming church services by guiding congregants, maintaining order, and creating a conducive worship environment.",
+    vision: "To create a welcoming and orderly worship environment that honors God and serves His people.",
+    objectives: [
+      "Welcome and guide church members and visitors",
+      "Maintain order during church services",
+      "Assist with seating arrangements",
+      "Collect offerings and tithes",
+      "Provide information and assistance to congregants",
+    ],
+    leaders: [
+      {
+        id: "usher-leader-1",
+        name: "Elder Thomas Kiprotich",
+        position: "Head Usher",
+        email: "thomas.kiprotich@ksucu.org",
+        phone: "+254 700 111 333",
+        image: "/images/thomas-kiprotich.jpg",
+        bio: "Elder Thomas has been serving in ushering ministry for over 15 years.",
+      },
+      {
+        id: "usher-leader-2",
+        name: "Sister Mary Wanjiku",
+        position: "Assistant Head Usher",
+        email: "mary.wanjiku@ksucu.org",
+        phone: "+254 700 222 444",
+        image: "/images/mary-wanjiku.jpg",
+        bio: "Sister Mary coordinates women's ushering teams.",
+      },
+    ],
+    members: [
+      {
+        id: "usher-member-1",
+        name: "Grace Mutindi",
+        position: "Senior Usher",
+        image: "/images/grace-mutindi.jpg",
+      },
+      {
+        id: "usher-member-2",
+        name: "Paul Wekesa",
+        position: "Door Keeper",
+        image: "/images/paul-wekesa.jpg",
+      },
+      {
+        id: "usher-member-3",
+        name: "Faith Chepkoech",
+        position: "Information Desk",
+        image: "/images/faith-chepkoech.jpg",
+      },
+      {
+        id: "usher-member-4",
+        name: "Michael Kamau",
+        position: "Parking Coordinator",
+        image: "/images/michael-kamau.jpg",
+      },
+    ],
+    meetingTime: "Every Sunday 7:00 AM",
+    location: "Church Foyer",
+  },
+  {
+    id: "creativity",
+    name: "Creativity",
+    category: "KSUCU-MC MINISTRIES",
+    mandate:
+      "The Creativity Ministry nurtures and showcases artistic talents within the church, using creative arts to worship God and minister to others.",
+    vision: "To use creative arts as a powerful tool for worship, evangelism, and spiritual growth.",
+    objectives: [
+      "Develop and showcase artistic talents",
+      "Organize creative arts events and exhibitions",
+      "Use arts for worship and ministry",
+      "Train members in various creative skills",
+      "Create visual and performing arts for church events",
+    ],
+    leaders: [
+      {
+        id: "creative-leader-1",
+        name: "Sister Grace Muthoni",
+        position: "Creative Arts Director",
+        email: "grace.muthoni@ksucu.org",
+        phone: "+254 700 333 555",
+        image: "/images/grace-muthoni.jpg",
+        bio: "Sister Grace is a professional artist and art teacher.",
+      },
+      {
+        id: "creative-leader-2",
+        name: "Brother Kevin Wanjala",
+        position: "Visual Arts Coordinator",
+        email: "kevin.wanjala@ksucu.org",
+        phone: "+254 700 444 666",
+        image: "/images/kevin-wanjala.jpg",
+        bio: "Brother Kevin specializes in graphic design and visual arts.",
+      },
+    ],
+    members: [
+      {
+        id: "creative-member-1",
+        name: "Hannah Njeri",
+        position: "Graphic Designer",
+        image: "/images/hannah-njeri.jpg",
+      },
+      {
+        id: "creative-member-2",
+        name: "David Ochieng",
+        position: "Poetry Coordinator",
+        image: "/images/david-ochieng.jpg",
+      },
+      {
+        id: "creative-member-3",
+        name: "Mercy Akinyi",
+        position: "Dance Instructor",
+        image: "/images/mercy-akinyi.jpg",
+      },
+    ],
+    meetingTime: "Every Saturday 2:00 PM",
+    location: "Creative Arts Studio",
+  },
+  {
+    id: "compassion",
+    name: "Compassion",
+    category: "KSUCU-MC MINISTRIES",
+    mandate:
+      "The Compassion Ministry demonstrates God's love through practical care and support for those in need within the church and community.",
+    vision: "To be the hands and feet of Jesus by showing compassion to those in need.",
+    objectives: [
+      "Provide practical support to needy families",
+      "Visit and care for the sick and elderly",
+      "Organize charity drives and community service",
+      "Counsel and support those facing difficulties",
+      "Partner with other organizations for community development",
+    ],
+    leaders: [
+      {
+        id: "compassion-leader-1",
+        name: "Deaconess Sarah Mutua",
+        position: "Compassion Ministry Leader",
+        email: "sarah.mutua@ksucu.org",
+        phone: "+254 700 555 777",
+        image: "/images/sarah-mutua.jpg",
+        bio: "Deaconess Sarah has dedicated her life to serving the needy and vulnerable.",
+      },
+      {
+        id: "compassion-leader-2",
+        name: "Elder John Kiplagat",
+        position: "Community Outreach Coordinator",
+        email: "john.kiplagat@ksucu.org",
+        phone: "+254 700 666 888",
+        image: "/images/john-kiplagat.jpg",
+        bio: "Elder John coordinates community outreach and development programs.",
+      },
+    ],
+    members: [
+      {
+        id: "compassion-member-1",
+        name: "Mary Wanjiru",
+        position: "Visitation Team Leader",
+        image: "/images/mary-wanjiru.jpg",
+      },
+      {
+        id: "compassion-member-2",
+        name: "Peter Mwangi",
+        position: "Food Distribution Coordinator",
+        image: "/images/peter-mwangi.jpg",
+      },
+      {
+        id: "compassion-member-3",
+        name: "Moses Wafula",
+        position: "Community Liaison",
+        image: "/images/moses-wafula.jpg",
+      },
+    ],
+    meetingTime: "Every Wednesday 5:30 PM",
+    location: "Community Hall",
+  },
+  {
+    id: "intercessory",
+    name: "Intercessory",
+    category: "KSUCU-MC MINISTRIES",
+    mandate:
+      "The Intercessory Ministry is dedicated to prayer and spiritual warfare, standing in the gap for the church, community, and nation through focused prayer.",
+    vision: "To be a house of prayer that impacts heaven and transforms earth through intercession.",
+    objectives: [
+      "Organize regular prayer meetings and vigils",
+      "Pray for church leadership and ministries",
+      "Intercede for community and national issues",
+      "Train members in effective prayer methods",
+      "Provide prayer support for church events",
+    ],
+    leaders: [
+      {
+        id: "prayer-leader-1",
+        name: "Pastor Ruth Chepkurui",
+        position: "Intercessory Leader",
+        email: "ruth.chepkurui@ksucu.org",
+        phone: "+254 700 777 999",
+        image: "/images/ruth-chepkurui.jpg",
+        bio: "Pastor Ruth is known for her powerful prayer ministry and spiritual insight.",
+      },
+      {
+        id: "prayer-leader-2",
+        name: "Elder Francis Ouma",
+        position: "Prayer Coordinator",
+        email: "francis.ouma@ksucu.org",
+        phone: "+254 700 888 111",
+        image: "/images/francis-ouma.jpg",
+        bio: "Elder Francis coordinates prayer schedules and training programs.",
+      },
+    ],
+    members: [
+      {
+        id: "prayer-member-1",
+        name: "Margaret Wairimu",
+        position: "Prayer Warrior",
+        image: "/images/margaret-wairimu.jpg",
+      },
+      {
+        id: "prayer-member-2",
+        name: "Andrew Maina",
+        position: "Early Morning Prayer Leader",
+        image: "/images/andrew-maina.jpg",
+      },
+      {
+        id: "prayer-member-3",
+        name: "Joyce Auma",
+        position: "Fasting Coordinator",
+        image: "/images/joyce-auma.jpg",
+      },
+    ],
+    meetingTime: "Every Tuesday and Friday 5:00 AM",
+    location: "Prayer Room",
+  },
+  {
+    id: "high-school",
+    name: "High School",
+    category: "KSUCU-MC MINISTRIES",
+    mandate:
+      "The High School Ministry focuses on nurturing and discipling high school students, providing them with spiritual guidance and age-appropriate programs.",
+    vision: "To raise a generation of young people who are passionate about God and equipped for His service.",
+    objectives: [
+      "Provide spiritual guidance to high school students",
+      "Organize age-appropriate programs and activities",
+      "Mentor students in their faith journey",
+      "Prepare students for university and adult life",
+      "Create a supportive community for teenagers",
+    ],
+    leaders: [
+      {
+        id: "hs-leader-1",
+        name: "Pastor Michael Otieno",
+        position: "High School Pastor",
+        email: "michael.otieno@ksucu.org",
+        phone: "+254 700 999 222",
+        image: "/images/michael-otieno.jpg",
+        bio: "Pastor Michael has been working with youth for over 10 years.",
+      },
+      {
+        id: "hs-leader-2",
+        name: "Sister Catherine Wanjala",
+        position: "Girls' Coordinator",
+        email: "catherine.wanjala@ksucu.org",
+        phone: "+254 700 111 444",
+        image: "/images/catherine-wanjala.jpg",
+        bio: "Sister Catherine mentors and guides teenage girls in their spiritual journey.",
+      },
+    ],
+    members: [
+      {
+        id: "hs-member-1",
+        name: "Emmanuel Kigen",
+        position: "Student Leader",
+        image: "/images/emmanuel-kigen.jpg",
+      },
+      {
+        id: "hs-member-2",
+        name: "Beatrice Nyokabi",
+        position: "Worship Team Leader",
+        image: "/images/beatrice-nyokabi.jpg",
+      },
+      {
+        id: "hs-member-3",
+        name: "Joseph Mwangi",
+        position: "Bible Study Leader",
+        image: "/images/joseph-mwangi.jpg",
+      },
+    ],
+    meetingTime: "Every Sunday 2:00 PM",
+    location: "Youth Hall",
+  },
+  {
+    id: "wananzambe",
+    name: "Wananzambe",
+    category: "KSUCU-MC MINISTRIES",
+    mandate:
+      "Wananzambe Ministry focuses on community development and social transformation through various outreach programs and community initiatives.",
+    vision:
+      "To transform communities through holistic development programs that address spiritual, social, and economic needs.",
+    objectives: [
+      "Implement community development projects",
+      "Provide skills training and capacity building",
+      "Support small-scale entrepreneurs",
+      "Organize health and wellness programs",
+      "Promote environmental conservation",
+    ],
+    leaders: [
+      {
+        id: "wananzambe-leader-1",
+        name: "Dr. Patricia Wangari",
+        position: "Program Director",
+        email: "patricia.wangari@ksucu.org",
+        phone: "+254 700 222 555",
+        image: "/images/patricia-wangari.jpg",
+        bio: "Dr. Patricia has extensive experience in community development and social work.",
+      },
+      {
+        id: "wananzambe-leader-2",
+        name: "Engineer Robert Macharia",
+        position: "Projects Coordinator",
+        email: "robert.macharia@ksucu.org",
+        phone: "+254 700 333 666",
+        image: "/images/robert-macharia.jpg",
+        bio: "Engineer Robert manages technical aspects of development projects.",
+      },
+    ],
+    members: [
+      {
+        id: "wananzambe-member-1",
+        name: "Timothy Njoroge",
+        position: "Skills Training Coordinator",
+        image: "/images/timothy-njoroge.jpg",
+      },
+      {
+        id: "wananzambe-member-2",
+        name: "Lydia Chepkemoi",
+        position: "Women's Empowerment Leader",
+        image: "/images/lydia-chepkemoi.jpg",
+      },
+      {
+        id: "wananzambe-member-3",
+        name: "Daniel Kuria",
+        position: "Youth Empowerment Officer",
+        image: "/images/daniel-kuria.jpg",
+      },
+    ],
+    meetingTime: "Every Thursday 6:00 PM",
+    location: "Community Development Center",
+  },
+  {
+    id: "church-school",
+    name: "Church School",
+    category: "KSUCU-MC MINISTRIES",
+    mandate:
+      "Church School Ministry provides Christian education and Sunday school programs for children and adults, ensuring biblical literacy and spiritual growth.",
+    vision: "To provide quality Christian education that builds strong biblical foundations for all ages.",
+    objectives: [
+      "Conduct Sunday school for all age groups",
+      "Develop Christian education curriculum",
+      "Train Sunday school teachers",
+      "Organize Bible study programs",
+      "Promote biblical literacy in the church",
+    ],
+    leaders: [
+      {
+        id: "school-leader-1",
+        name: "Teacher Sarah Mutua",
+        position: "Church School Director",
+        email: "sarah.mutua@ksucu.org",
+        phone: "+254 700 444 777",
+        image: "/images/sarah-mutua.jpg",
+        bio: "Teacher Sarah is a qualified educator with a passion for Christian education.",
+      },
+      {
+        id: "school-leader-2",
+        name: "Teacher James Kiplagat",
+        position: "Curriculum Coordinator",
+        email: "james.kiplagat@ksucu.org",
+        phone: "+254 700 555 888",
+        image: "/images/james-kiplagat.jpg",
+        bio: "Teacher James develops and coordinates educational curricula.",
+      },
+    ],
+    members: [
+      {
+        id: "school-member-1",
+        name: "Ruth Wambui",
+        position: "Children's Coordinator",
+        image: "/images/ruth-wambui.jpg",
+      },
+      {
+        id: "school-member-2",
+        name: "Daniel Kuria",
+        position: "Children's Teacher",
+        image: "/images/daniel-kuria.jpg",
+      },
+      {
+        id: "school-member-3",
+        name: "Joyce Auma",
+        position: "Nursery Coordinator",
+        image: "/images/joyce-auma.jpg",
+      },
+    ],
+    meetingTime: "Every Sunday 9:00 AM",
+    location: "Sunday School Classrooms",
+  },
+  {
+    id: "praise-and-worship",
+    name: "Praise and Worship",
+    category: "KSUCU-MC MINISTRIES",
+    mandate:
+      "Praise and Worship Ministry leads the congregation in worship through music, creating an atmosphere for encountering God's presence.",
+    vision: "To usher the congregation into God's presence through spirit-filled worship and praise.",
+    objectives: [
+      "Lead congregational worship during services",
+      "Develop and train worship leaders",
+      "Select appropriate songs for different occasions",
+      "Maintain worship equipment and instruments",
+      "Organize special worship events",
+    ],
+    leaders: [
+      {
+        id: "worship-leader-1",
+        name: "Worship Pastor Kevin Mbugua",
+        position: "Worship Leader",
+        email: "kevin.mbugua@ksucu.org",
+        phone: "+254 700 666 999",
+        image: "/images/kevin-mbugua.jpg",
+        bio: "Worship Pastor Kevin is a gifted musician and worship leader.",
+      },
+      {
+        id: "worship-leader-2",
+        name: "Sister Linda Cherop",
+        position: "Assistant Worship Leader",
+        email: "linda.cherop@ksucu.org",
+        phone: "+254 700 777 111",
+        image: "/images/linda-cherop.jpg",
+        bio: "Sister Linda assists in worship leading and musician training.",
+      },
+    ],
+    members: [
+      {
+        id: "worship-member-1",
+        name: "Brian Omondi",
+        position: "Music Director",
+        image: "/images/brian-omondi.jpg",
+      },
+      {
+        id: "worship-member-2",
+        name: "Collins Wekesa",
+        position: "Lead Guitarist",
+        image: "/images/collins-wekesa.jpg",
+      },
+      {
+        id: "worship-member-3",
+        name: "Mercy Wanjiru",
+        position: "Vocalist",
+        image: "/images/mercy-wanjiru.jpg",
+      },
+      {
+        id: "worship-member-4",
+        name: "Felix Kibet",
+        position: "Drummer",
+        image: "/images/felix-kibet.jpg",
+      },
+    ],
+    meetingTime: "Every Wednesday 6:00 PM and Sunday 8:00 AM",
+    location: "Main Sanctuary",
+  },
+  {
+    id: "choir",
+    name: "Choir",
+    category: "KSUCU-MC MINISTRIES",
+    mandate:
+      "The Choir Ministry provides special music ministry through organized choral performances, enhancing worship services and special events.",
+    vision: "To minister through music and bring glory to God through excellent choral performances.",
+    objectives: [
+      "Perform special music during services",
+      "Participate in church events and celebrations",
+      "Develop vocal and musical skills",
+      "Minister through music in the community",
+      "Organize choir concerts and performances",
+    ],
+    leaders: [
+      {
+        id: "choir-leader-1",
+        name: "Choirmaster Patricia Wangari",
+        position: "Choir Director",
+        email: "patricia.wangari@ksucu.org",
+        phone: "+254 700 888 222",
+        image: "/images/patricia-wangari.jpg",
+        bio: "Choirmaster Patricia has led the choir for over 12 years.",
+      },
+      {
+        id: "choir-leader-2",
+        name: "Assistant Director Robert Macharia",
+        position: "Assistant Choir Director",
+        email: "robert.macharia@ksucu.org",
+        phone: "+254 700 999 333",
+        image: "/images/robert-macharia.jpg",
+        bio: "Assistant Director Robert supports choir training and performances.",
+      },
+    ],
+    members: [
+      {
+        id: "choir-member-1",
+        name: "Agnes Moraa",
+        position: "Choir Secretary",
+        image: "/images/agnes-moraa.jpg",
+      },
+      {
+        id: "choir-member-2",
+        name: "Timothy Njoroge",
+        position: "Tenor",
+        image: "/images/timothy-njoroge.jpg",
+      },
+      {
+        id: "choir-member-3",
+        name: "Lydia Chepkemoi",
+        position: "Soprano",
+        image: "/images/lydia-chepkemoi.jpg",
+      },
+      {
+        id: "choir-member-4",
+        name: "Moses Wafula",
+        position: "Bass",
+        image: "/images/moses-wafula.jpg",
+      },
+    ],
+    meetingTime: "Every Thursday 6:30 PM and Sunday 1:00 PM",
+    location: "Choir Room",
+  },
+
+  // CLASSES AND FELLOWSHIPS
+  {
+    id: "best-p-classes",
+    name: "Best-p Classes",
+    category: "CLASSES AND FELLOWSHIPS",
+    mandate:
+      "Best-p Classes provide specialized training and development programs for church members, focusing on personal growth and ministry skills.",
+    vision: "To equip church members with practical skills and knowledge for effective Christian living and ministry.",
+    objectives: [
+      "Provide specialized training programs",
+      "Develop leadership and ministry skills",
+      "Offer personal development courses",
+      "Create learning opportunities for all ages",
+      "Promote continuous education and growth",
+    ],
+    leaders: [
+      {
+        id: "bestp-leader-1",
+        name: "Dr. Sarah Mutua",
+        position: "Classes Coordinator",
+        email: "sarah.mutua@ksucu.org",
+        phone: "+254 700 111 555",
+        image: "/images/sarah-mutua.jpg",
+        bio: "Dr. Sarah coordinates all training and development programs.",
+      },
+      {
+        id: "bestp-leader-2",
+        name: "Teacher James Kiplagat",
+        position: "Curriculum Developer",
+        email: "james.kiplagat@ksucu.org",
+        phone: "+254 700 222 666",
+        image: "/images/james-kiplagat.jpg",
+        bio: "Teacher James develops specialized curricula for different programs.",
+      },
+    ],
+    members: [
+      {
+        id: "bestp-member-1",
+        name: "Ruth Wambui",
+        position: "Training Coordinator",
+        image: "/images/ruth-wambui.jpg",
+      },
+      {
+        id: "bestp-member-2",
+        name: "Michael Otieno",
+        position: "Leadership Trainer",
+        image: "/images/michael-otieno.jpg",
+      },
+      {
+        id: "bestp-member-3",
+        name: "Esther Njeri",
+        position: "Skills Development Instructor",
+        image: "/images/esther-njeri.jpg",
+      },
+    ],
+    meetingTime: "Every Saturday 10:00 AM",
+    location: "Training Center",
+  },
+  {
+    id: "class-fellowships",
+    name: "Class Fellowships",
+    category: "CLASSES AND FELLOWSHIPS",
+    mandate:
+      "Class Fellowships bring together church members based on age groups or life stages for fellowship, mutual support, and spiritual growth.",
+    vision: "To create strong bonds of fellowship and support among church members through age-appropriate gatherings.",
+    objectives: [
+      "Foster fellowship among age-matched groups",
+      "Provide mutual support and encouragement",
+      "Organize social and spiritual activities",
+      "Create mentorship opportunities",
+      "Build lasting friendships within the church",
+    ],
+    leaders: [
+      {
+        id: "class-fellow-leader-1",
+        name: "Elder Thomas Kiprotich",
+        position: "Fellowship Coordinator",
+        email: "thomas.kiprotich@ksucu.org",
+        phone: "+254 700 333 777",
+        image: "/images/thomas-kiprotich.jpg",
+        bio: "Elder Thomas coordinates fellowship activities across different age groups.",
+      },
+      {
+        id: "class-fellow-leader-2",
+        name: "Sister Mary Wanjiku",
+        position: "Activities Coordinator",
+        email: "mary.wanjiku@ksucu.org",
+        phone: "+254 700 444 888",
+        image: "/images/mary-wanjiku.jpg",
+        bio: "Sister Mary organizes fellowship activities and events.",
+      },
+    ],
+    members: [
+      {
+        id: "class-fellow-member-1",
+        name: "Grace Mutindi",
+        position: "Young Adults Coordinator",
+        image: "/images/grace-mutindi.jpg",
+      },
+      {
+        id: "class-fellow-member-2",
+        name: "Paul Wekesa",
+        position: "Middle Age Coordinator",
+        image: "/images/paul-wekesa.jpg",
+      },
+      {
+        id: "class-fellow-member-3",
+        name: "Faith Chepkoech",
+        position: "Seniors Coordinator",
+        image: "/images/faith-chepkoech.jpg",
+      },
+    ],
+    meetingTime: "Every Second Sunday 3:00 PM",
+    location: "Fellowship Hall",
+  },
+  {
+    id: "sisters-fellowship",
+    name: "Sisters Fellowship",
+    category: "CLASSES AND FELLOWSHIPS",
+    mandate:
+      "Sisters Fellowship provides a platform for women in the church to come together for spiritual growth, mutual support, and women-specific ministry activities.",
+    vision: "To empower and support women in their spiritual journey and life challenges through sisterly fellowship.",
+    objectives: [
+      "Provide spiritual support for women",
+      "Address women-specific issues and challenges",
+      "Organize women's ministry activities",
+      "Create mentorship opportunities for women",
+      "Promote women's participation in church leadership",
+    ],
+    leaders: [
+      {
+        id: "sisters-leader-1",
+        name: "Sister Grace Muthoni",
+        position: "Sisters Fellowship Leader",
+        email: "grace.muthoni@ksucu.org",
+        phone: "+254 700 555 999",
+        image: "/images/grace-muthoni.jpg",
+        bio: "Sister Grace leads women's ministry and empowerment programs.",
+      },
+      {
+        id: "sisters-leader-2",
+        name: "Sister Linda Cherop",
+        position: "Assistant Leader",
+        email: "linda.cherop@ksucu.org",
+        phone: "+254 700 666 111",
+        image: "/images/linda-cherop.jpg",
+        bio: "Sister Linda assists in women's fellowship coordination.",
+      },
+    ],
+    members: [
+      {
+        id: "sisters-member-1",
+        name: "Rose Wanjiku",
+        position: "Secretary",
+        image: "/images/rose-wanjiku.jpg",
+      },
+      {
+        id: "sisters-member-2",
+        name: "Hannah Njeri",
+        position: "Prayer Coordinator",
+        image: "/images/hannah-njeri.jpg",
+      },
+      {
+        id: "sisters-member-3",
+        name: "Ruth Wambui",
+        position: "Bible Study Leader",
+        image: "/images/ruth-wambui.jpg",
+      },
+      {
+        id: "sisters-member-4",
+        name: "Margaret Wairimu",
+        position: "Counseling Coordinator",
+        image: "/images/margaret-wairimu.jpg",
+      },
+    ],
+    meetingTime: "Every First Saturday 2:00 PM",
+    location: "Women's Hall",
+  },
+  {
+    id: "brothers-fellowship",
+    name: "Brothers Fellowship",
+    category: "CLASSES AND FELLOWSHIPS",
+    mandate:
+      "Brothers Fellowship brings together men in the church for spiritual growth, accountability, and men-specific ministry activities and discussions.",
+    vision: "To develop godly men who are strong spiritual leaders in their families, church, and community.",
+    objectives: [
+      "Provide spiritual accountability for men",
+      "Address men-specific issues and challenges",
+      "Develop male leadership in the church",
+      "Create mentorship opportunities for men",
+      "Organize men's ministry activities and outreaches",
+    ],
+    leaders: [
+      {
+        id: "brothers-leader-1",
+        name: "Elder Thomas Kiprotich",
+        position: "Brothers Fellowship Leader",
+        email: "thomas.kiprotich@ksucu.org",
+        phone: "+254 700 777 222",
+        image: "/images/thomas-kiprotich.jpg",
+        bio: "Elder Thomas leads men's ministry and mentorship programs.",
+      },
+      {
+        id: "brothers-leader-2",
+        name: "Brother Kevin Wanjala",
+        position: "Assistant Leader",
+        email: "kevin.wanjala@ksucu.org",
+        phone: "+254 700 888 333",
+        image: "/images/kevin-wanjala.jpg",
+        bio: "Brother Kevin assists in men's fellowship activities.",
+      },
+    ],
+    members: [
+      {
+        id: "brothers-member-1",
+        name: "Francis Ouma",
+        position: "Secretary",
+        image: "/images/francis-ouma.jpg",
+      },
+      {
+        id: "brothers-member-2",
+        name: "Samuel Kiprotich",
+        position: "Prayer Leader",
+        image: "/images/samuel-kiprotich.jpg",
+      },
+      {
+        id: "brothers-member-3",
+        name: "David Ochieng",
+        position: "Bible Study Coordinator",
+        image: "/images/david-ochieng.jpg",
+      },
+      {
+        id: "brothers-member-4",
+        name: "Peter Mwangi",
+        position: "Outreach Leader",
+        image: "/images/peter-mwangi.jpg",
+      },
+    ],
+    meetingTime: "Every Third Saturday 3:00 PM",
+    location: "Men's Hall",
+  },
+  {
+    id: "discipleship-classes",
+    name: "Discipleship Classes",
+    category: "CLASSES AND FELLOWSHIPS",
+    mandate:
+      "Discipleship Classes provide systematic biblical teaching and spiritual formation for new believers and those seeking to deepen their faith.",
+    vision:
+      "To make disciples who make disciples, building a strong foundation of biblical knowledge and Christian character.",
+    objectives: [
+      "Provide systematic biblical teaching",
+      "Develop spiritual disciplines and practices",
+      "Train new believers in Christian fundamentals",
+      "Create pathways for spiritual growth",
+      "Prepare members for ministry and leadership",
+    ],
+    leaders: [
+      {
+        id: "discipleship-leader-1",
+        name: "Pastor Mark Kiprotich",
+        position: "Discipleship Director",
+        email: "mark.kiprotich@ksucu.org",
+        phone: "+254 700 999 444",
+        image: "/images/mark-kiprotich.jpg",
+        bio: "Pastor Mark oversees all discipleship and training programs.",
+      },
+      {
+        id: "discipleship-leader-2",
+        name: "Teacher Sarah Mutua",
+        position: "Curriculum Coordinator",
+        email: "sarah.mutua@ksucu.org",
+        phone: "+254 700 111 666",
+        image: "/images/sarah-mutua.jpg",
+        bio: "Teacher Sarah develops discipleship curricula and materials.",
+      },
+    ],
+    members: [
+      {
+        id: "discipleship-member-1",
+        name: "Elder John Kiplagat",
+        position: "Training Supervisor",
+        image: "/images/john-kiplagat.jpg",
+      },
+      {
+        id: "discipleship-member-2",
+        name: "Stephen Mutiso",
+        position: "New Believers Class Teacher",
+        image: "/images/stephen-mutiso.jpg",
+      },
+      {
+        id: "discipleship-member-3",
+        name: "Catherine Wanjala",
+        position: "Intermediate Class Teacher",
+        image: "/images/catherine-wanjala.jpg",
+      },
+      {
+        id: "discipleship-member-4",
+        name: "Emmanuel Kigen",
+        position: "Advanced Class Teacher",
+        image: "/images/emmanuel-kigen.jpg",
+      },
+    ],
+    meetingTime: "Every Sunday 11:00 AM",
+    location: "Discipleship Center",
+  },
+]
+
+// CRUD operations
+export const addEntity = (entity: Entity) => {
+  entitiesData.push(entity)
+}
+
+export const updateEntity = (id: string, updatedEntity: Partial<Entity>) => {
+  const index = entitiesData.findIndex((entity) => entity.id === id)
+  if (index !== -1) {
+    entitiesData[index] = { ...entitiesData[index], ...updatedEntity }
+  }
+}
+
+export const deleteEntity = (id: string) => {
+  entitiesData = entitiesData.filter((entity) => entity.id !== id)
+}
+
+export const getEntityById = (id: string): Entity | undefined => {
+  return entitiesData.find((entity) => entity.id === id)
+}
+
+export const getEntitiesByCategory = (category: string): Entity[] => {
+  return entitiesData.filter((entity) => entity.category === category)
+}
